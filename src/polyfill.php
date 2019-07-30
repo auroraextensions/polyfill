@@ -1,0 +1,39 @@
+<?php
+/**
+ * polyfill.php
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.auroraextensions.com/magento/extensions/2.x/polyfill/LICENSE.txt
+ *
+ * @package       AuroraExtensions_Polyfill
+ * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
+ * @license       MIT License
+ */
+declare(strict_types=1);
+
+if (!function_exists('array_key_first')) {
+    /** @see https://www.php.net/manual/en/function.array-key-first.php */
+    function array_key_first(array $source) {
+        foreach($source as $key => $value) {
+            return $key;
+        }
+
+        return null;
+    }
+}
+
+if (!function_exists('array_key_last')) {
+    /** @see https://www.php.net/manual/en/function.array-key-last.php */
+    function array_key_last(array $source) {
+        if (!empty($source)) {
+            return array_keys($source)[count($source) - 1];
+        }
+
+        return null;
+    }
+}
