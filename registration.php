@@ -22,4 +22,4 @@ ComponentRegistrar::register(
     __DIR__
 );
 
-require_once __DIR__ . '/src/polyfill.php';
+require_once __DIR__ . '/polyfill.php';
