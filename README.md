@@ -1,6 +1,6 @@
 # AuroraExtensions\_Polyfill
 
-Magento module that backports PHP 7.3+ features to older versions.
+Backport PHP 7.3+ features to older versions for use in Magento.
 
 ## PHP Versions
 
@@ -9,6 +9,6 @@ Magento module that backports PHP 7.3+ features to older versions.
 
 ## Functions
 
-- `array_key_first`
-- `array_key_last`
-- `is_countable`
+- `array_key_first` (PHP >=7.3.0)
+- `array_key_last` (PHP >=7.3.0)
+- `is_countable` (PHP >=7.3.0)
