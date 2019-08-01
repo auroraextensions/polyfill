@@ -16,6 +16,8 @@
  */
 declare(strict_types=1);
 
+use Countable;
+
 if (!function_exists('array_key_first')) {
     /** @link https://www.php.net/manual/en/function.array-key-first.php */
     function array_key_first(array $source) {
