@@ -9,6 +9,6 @@ Backport PHP 7.3+ features to older versions for use in Magento.
 
 ## Functions
 
-- `array_key_first` (PHP >=7.3.0)
-- `array_key_last` (PHP >=7.3.0)
-- `is_countable` (PHP >=7.3.0)
+- `array_key_first` <sup><var>>=7.3.0</var></sup>
+- `array_key_last` <sup><var>>=7.3.0</var></sup>
+- `is_countable` <sup><var>>=7.3.0</var></sup>
